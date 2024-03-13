@@ -1,19 +1,21 @@
 class PartyPlanner {
-	constructor(guestList) {
+	constructor() {
 		this.guestList = [];
 	}
+
 	addToGuestList(name) {
-		this.guestList.push(name)
+		this.guestList.push(name);
 	}
 
 	throwParty() {
 		if (!this.guestList.length) {
 			return "Gotta add people to the guest list";
 		} else {
-			return `Welcome to the party ${this.guestList.join(" and ")}.`;
+			return `Welcome to the party ${this.guestList.join(" and ")}`;
 		}
 	}
 }
+
 
 
 // console.log(party.throwParty()); // prints "Gotta add people to the guest list"
